@@ -1,0 +1,29 @@
+package com.baoge.netty.demo_002;
+
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.SimpleChannelInboundHandler;
+
+import java.util.UUID;
+
+/**
+ * Copyright 2018-2028 Baoge All Rights Reserved.
+ * Author: Shao Xu Bao <15818589952@163.com>
+ * Date:   2020/1/1
+ */
+public class MyServerHandler extends SimpleChannelInboundHandler<String> {
+
+    @Override
+    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
+        System.out.println(ctx.channel().remoteAddress() + ", " + msg);
+
+        ctx.channel().writeAndFlush("from server :" + UUID.randomUUID());
+
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        cause.printStackTrace();
+        ctx.close();
+    }
+
+}
