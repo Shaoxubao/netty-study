@@ -1,0 +1,16 @@
+// 安装protoc(注意与引入的"protobuf-java"和"protobuf-java-util"版本保持一致)后，
+// 执行命令生成源文件：protoc --java_out=src/main/java/ src/protobuf/Student.proto
+
+syntax = "proto2";
+
+package com.baoge.protobuf;
+
+option optimize_for = SPEED;
+option java_package = "com.baoge.protobuf";
+option java_outer_classname = "DataInfo";
+
+message Student {
+    required string name = 1;
+    optional int32 age = 2;
+    optional string address = 3;
+}
