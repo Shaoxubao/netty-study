@@ -14,22 +14,1407 @@ public final class DataInfo {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  public interface MyMessageOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.baoge.protobuf.MyMessage)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return Whether the dataType field is set.
+     */
+    boolean hasDataType();
+    /**
+     * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return The dataType.
+     */
+    com.baoge.protobuf.DataInfo.MyMessage.DataType getDataType();
+
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     * @return Whether the student field is set.
+     */
+    boolean hasStudent();
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     * @return The student.
+     */
+    com.baoge.protobuf.DataInfo.Student getStudent();
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     */
+    com.baoge.protobuf.DataInfo.StudentOrBuilder getStudentOrBuilder();
+
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     * @return Whether the dog field is set.
+     */
+    boolean hasDog();
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     * @return The dog.
+     */
+    com.baoge.protobuf.DataInfo.Dog getDog();
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     */
+    com.baoge.protobuf.DataInfo.DogOrBuilder getDogOrBuilder();
+
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     * @return Whether the cat field is set.
+     */
+    boolean hasCat();
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     * @return The cat.
+     */
+    com.baoge.protobuf.DataInfo.Cat getCat();
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     */
+    com.baoge.protobuf.DataInfo.CatOrBuilder getCatOrBuilder();
+
+    public com.baoge.protobuf.DataInfo.MyMessage.DataBodyCase getDataBodyCase();
+  }
+  /**
+   * Protobuf type {@code com.baoge.protobuf.MyMessage}
+   */
+  public  static final class MyMessage extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.baoge.protobuf.MyMessage)
+      MyMessageOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use MyMessage.newBuilder() to construct.
+    private MyMessage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private MyMessage() {
+      dataType_ = 1;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new MyMessage();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private MyMessage(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+              int rawValue = input.readEnum();
+                @SuppressWarnings("deprecation")
+              com.baoge.protobuf.DataInfo.MyMessage.DataType value = com.baoge.protobuf.DataInfo.MyMessage.DataType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                dataType_ = rawValue;
+              }
+              break;
+            }
+            case 18: {
+              com.baoge.protobuf.DataInfo.Student.Builder subBuilder = null;
+              if (dataBodyCase_ == 2) {
+                subBuilder = ((com.baoge.protobuf.DataInfo.Student) dataBody_).toBuilder();
+              }
+              dataBody_ =
+                  input.readMessage(com.baoge.protobuf.DataInfo.Student.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.baoge.protobuf.DataInfo.Student) dataBody_);
+                dataBody_ = subBuilder.buildPartial();
+              }
+              dataBodyCase_ = 2;
+              break;
+            }
+            case 26: {
+              com.baoge.protobuf.DataInfo.Dog.Builder subBuilder = null;
+              if (dataBodyCase_ == 3) {
+                subBuilder = ((com.baoge.protobuf.DataInfo.Dog) dataBody_).toBuilder();
+              }
+              dataBody_ =
+                  input.readMessage(com.baoge.protobuf.DataInfo.Dog.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.baoge.protobuf.DataInfo.Dog) dataBody_);
+                dataBody_ = subBuilder.buildPartial();
+              }
+              dataBodyCase_ = 3;
+              break;
+            }
+            case 34: {
+              com.baoge.protobuf.DataInfo.Cat.Builder subBuilder = null;
+              if (dataBodyCase_ == 4) {
+                subBuilder = ((com.baoge.protobuf.DataInfo.Cat) dataBody_).toBuilder();
+              }
+              dataBody_ =
+                  input.readMessage(com.baoge.protobuf.DataInfo.Cat.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.baoge.protobuf.DataInfo.Cat) dataBody_);
+                dataBody_ = subBuilder.buildPartial();
+              }
+              dataBodyCase_ = 4;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_MyMessage_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_MyMessage_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.baoge.protobuf.DataInfo.MyMessage.class, com.baoge.protobuf.DataInfo.MyMessage.Builder.class);
+    }
+
+    /**
+     * Protobuf enum {@code com.baoge.protobuf.MyMessage.DataType}
+     */
+    public enum DataType
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>StudentType = 1;</code>
+       */
+      StudentType(1),
+      /**
+       * <code>DogType = 2;</code>
+       */
+      DogType(2),
+      /**
+       * <code>CatType = 3;</code>
+       */
+      CatType(3),
+      ;
+
+      /**
+       * <code>StudentType = 1;</code>
+       */
+      public static final int StudentType_VALUE = 1;
+      /**
+       * <code>DogType = 2;</code>
+       */
+      public static final int DogType_VALUE = 2;
+      /**
+       * <code>CatType = 3;</code>
+       */
+      public static final int CatType_VALUE = 3;
+
+
+      public final int getNumber() {
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DataType valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static DataType forNumber(int value) {
+        switch (value) {
+          case 1: return StudentType;
+          case 2: return DogType;
+          case 3: return CatType;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<DataType>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          DataType> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DataType>() {
+              public DataType findValueByNumber(int number) {
+                return DataType.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.baoge.protobuf.DataInfo.MyMessage.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final DataType[] VALUES = values();
+
+      public static DataType valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private DataType(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:com.baoge.protobuf.MyMessage.DataType)
+    }
+
+    private int bitField0_;
+    private int dataBodyCase_ = 0;
+    private java.lang.Object dataBody_;
+    public enum DataBodyCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      STUDENT(2),
+      DOG(3),
+      CAT(4),
+      DATABODY_NOT_SET(0);
+      private final int value;
+      private DataBodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DataBodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static DataBodyCase forNumber(int value) {
+        switch (value) {
+          case 2: return STUDENT;
+          case 3: return DOG;
+          case 4: return CAT;
+          case 0: return DATABODY_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public DataBodyCase
+    getDataBodyCase() {
+      return DataBodyCase.forNumber(
+          dataBodyCase_);
+    }
+
+    public static final int DATA_TYPE_FIELD_NUMBER = 1;
+    private int dataType_;
+    /**
+     * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return Whether the dataType field is set.
+     */
+    public boolean hasDataType() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return The dataType.
+     */
+    public com.baoge.protobuf.DataInfo.MyMessage.DataType getDataType() {
+      @SuppressWarnings("deprecation")
+      com.baoge.protobuf.DataInfo.MyMessage.DataType result = com.baoge.protobuf.DataInfo.MyMessage.DataType.valueOf(dataType_);
+      return result == null ? com.baoge.protobuf.DataInfo.MyMessage.DataType.StudentType : result;
+    }
+
+    public static final int STUDENT_FIELD_NUMBER = 2;
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     * @return Whether the student field is set.
+     */
+    public boolean hasStudent() {
+      return dataBodyCase_ == 2;
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     * @return The student.
+     */
+    public com.baoge.protobuf.DataInfo.Student getStudent() {
+      if (dataBodyCase_ == 2) {
+         return (com.baoge.protobuf.DataInfo.Student) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+     */
+    public com.baoge.protobuf.DataInfo.StudentOrBuilder getStudentOrBuilder() {
+      if (dataBodyCase_ == 2) {
+         return (com.baoge.protobuf.DataInfo.Student) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+    }
+
+    public static final int DOG_FIELD_NUMBER = 3;
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     * @return Whether the dog field is set.
+     */
+    public boolean hasDog() {
+      return dataBodyCase_ == 3;
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     * @return The dog.
+     */
+    public com.baoge.protobuf.DataInfo.Dog getDog() {
+      if (dataBodyCase_ == 3) {
+         return (com.baoge.protobuf.DataInfo.Dog) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+     */
+    public com.baoge.protobuf.DataInfo.DogOrBuilder getDogOrBuilder() {
+      if (dataBodyCase_ == 3) {
+         return (com.baoge.protobuf.DataInfo.Dog) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+    }
+
+    public static final int CAT_FIELD_NUMBER = 4;
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     * @return Whether the cat field is set.
+     */
+    public boolean hasCat() {
+      return dataBodyCase_ == 4;
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     * @return The cat.
+     */
+    public com.baoge.protobuf.DataInfo.Cat getCat() {
+      if (dataBodyCase_ == 4) {
+         return (com.baoge.protobuf.DataInfo.Cat) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+    }
+    /**
+     * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+     */
+    public com.baoge.protobuf.DataInfo.CatOrBuilder getCatOrBuilder() {
+      if (dataBodyCase_ == 4) {
+         return (com.baoge.protobuf.DataInfo.Cat) dataBody_;
+      }
+      return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDataType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeEnum(1, dataType_);
+      }
+      if (dataBodyCase_ == 2) {
+        output.writeMessage(2, (com.baoge.protobuf.DataInfo.Student) dataBody_);
+      }
+      if (dataBodyCase_ == 3) {
+        output.writeMessage(3, (com.baoge.protobuf.DataInfo.Dog) dataBody_);
+      }
+      if (dataBodyCase_ == 4) {
+        output.writeMessage(4, (com.baoge.protobuf.DataInfo.Cat) dataBody_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, dataType_);
+      }
+      if (dataBodyCase_ == 2) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, (com.baoge.protobuf.DataInfo.Student) dataBody_);
+      }
+      if (dataBodyCase_ == 3) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, (com.baoge.protobuf.DataInfo.Dog) dataBody_);
+      }
+      if (dataBodyCase_ == 4) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, (com.baoge.protobuf.DataInfo.Cat) dataBody_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.baoge.protobuf.DataInfo.MyMessage)) {
+        return super.equals(obj);
+      }
+      com.baoge.protobuf.DataInfo.MyMessage other = (com.baoge.protobuf.DataInfo.MyMessage) obj;
+
+      if (hasDataType() != other.hasDataType()) return false;
+      if (hasDataType()) {
+        if (dataType_ != other.dataType_) return false;
+      }
+      if (!getDataBodyCase().equals(other.getDataBodyCase())) return false;
+      switch (dataBodyCase_) {
+        case 2:
+          if (!getStudent()
+              .equals(other.getStudent())) return false;
+          break;
+        case 3:
+          if (!getDog()
+              .equals(other.getDog())) return false;
+          break;
+        case 4:
+          if (!getCat()
+              .equals(other.getCat())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDataType()) {
+        hash = (37 * hash) + DATA_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + dataType_;
+      }
+      switch (dataBodyCase_) {
+        case 2:
+          hash = (37 * hash) + STUDENT_FIELD_NUMBER;
+          hash = (53 * hash) + getStudent().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + DOG_FIELD_NUMBER;
+          hash = (53 * hash) + getDog().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + CAT_FIELD_NUMBER;
+          hash = (53 * hash) + getCat().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.MyMessage parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.baoge.protobuf.DataInfo.MyMessage prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.baoge.protobuf.MyMessage}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.baoge.protobuf.MyMessage)
+        com.baoge.protobuf.DataInfo.MyMessageOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_MyMessage_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_MyMessage_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.baoge.protobuf.DataInfo.MyMessage.class, com.baoge.protobuf.DataInfo.MyMessage.Builder.class);
+      }
+
+      // Construct using com.baoge.protobuf.DataInfo.MyMessage.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        dataType_ = 1;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        dataBodyCase_ = 0;
+        dataBody_ = null;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_MyMessage_descriptor;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.MyMessage getDefaultInstanceForType() {
+        return com.baoge.protobuf.DataInfo.MyMessage.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.MyMessage build() {
+        com.baoge.protobuf.DataInfo.MyMessage result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.MyMessage buildPartial() {
+        com.baoge.protobuf.DataInfo.MyMessage result = new com.baoge.protobuf.DataInfo.MyMessage(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.dataType_ = dataType_;
+        if (dataBodyCase_ == 2) {
+          if (studentBuilder_ == null) {
+            result.dataBody_ = dataBody_;
+          } else {
+            result.dataBody_ = studentBuilder_.build();
+          }
+        }
+        if (dataBodyCase_ == 3) {
+          if (dogBuilder_ == null) {
+            result.dataBody_ = dataBody_;
+          } else {
+            result.dataBody_ = dogBuilder_.build();
+          }
+        }
+        if (dataBodyCase_ == 4) {
+          if (catBuilder_ == null) {
+            result.dataBody_ = dataBody_;
+          } else {
+            result.dataBody_ = catBuilder_.build();
+          }
+        }
+        result.bitField0_ = to_bitField0_;
+        result.dataBodyCase_ = dataBodyCase_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.baoge.protobuf.DataInfo.MyMessage) {
+          return mergeFrom((com.baoge.protobuf.DataInfo.MyMessage)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.baoge.protobuf.DataInfo.MyMessage other) {
+        if (other == com.baoge.protobuf.DataInfo.MyMessage.getDefaultInstance()) return this;
+        if (other.hasDataType()) {
+          setDataType(other.getDataType());
+        }
+        switch (other.getDataBodyCase()) {
+          case STUDENT: {
+            mergeStudent(other.getStudent());
+            break;
+          }
+          case DOG: {
+            mergeDog(other.getDog());
+            break;
+          }
+          case CAT: {
+            mergeCat(other.getCat());
+            break;
+          }
+          case DATABODY_NOT_SET: {
+            break;
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        if (!hasDataType()) {
+          return false;
+        }
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.baoge.protobuf.DataInfo.MyMessage parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.baoge.protobuf.DataInfo.MyMessage) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int dataBodyCase_ = 0;
+      private java.lang.Object dataBody_;
+      public DataBodyCase
+          getDataBodyCase() {
+        return DataBodyCase.forNumber(
+            dataBodyCase_);
+      }
+
+      public Builder clearDataBody() {
+        dataBodyCase_ = 0;
+        dataBody_ = null;
+        onChanged();
+        return this;
+      }
+
+      private int bitField0_;
+
+      private int dataType_ = 1;
+      /**
+       * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return Whether the dataType field is set.
+       */
+      public boolean hasDataType() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return The dataType.
+       */
+      public com.baoge.protobuf.DataInfo.MyMessage.DataType getDataType() {
+        @SuppressWarnings("deprecation")
+        com.baoge.protobuf.DataInfo.MyMessage.DataType result = com.baoge.protobuf.DataInfo.MyMessage.DataType.valueOf(dataType_);
+        return result == null ? com.baoge.protobuf.DataInfo.MyMessage.DataType.StudentType : result;
+      }
+      /**
+       * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @param value The dataType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDataType(com.baoge.protobuf.DataInfo.MyMessage.DataType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        dataType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required .com.baoge.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDataType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        dataType_ = 1;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Student, com.baoge.protobuf.DataInfo.Student.Builder, com.baoge.protobuf.DataInfo.StudentOrBuilder> studentBuilder_;
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       * @return Whether the student field is set.
+       */
+      public boolean hasStudent() {
+        return dataBodyCase_ == 2;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       * @return The student.
+       */
+      public com.baoge.protobuf.DataInfo.Student getStudent() {
+        if (studentBuilder_ == null) {
+          if (dataBodyCase_ == 2) {
+            return (com.baoge.protobuf.DataInfo.Student) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+        } else {
+          if (dataBodyCase_ == 2) {
+            return studentBuilder_.getMessage();
+          }
+          return com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public Builder setStudent(com.baoge.protobuf.DataInfo.Student value) {
+        if (studentBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dataBody_ = value;
+          onChanged();
+        } else {
+          studentBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public Builder setStudent(
+          com.baoge.protobuf.DataInfo.Student.Builder builderForValue) {
+        if (studentBuilder_ == null) {
+          dataBody_ = builderForValue.build();
+          onChanged();
+        } else {
+          studentBuilder_.setMessage(builderForValue.build());
+        }
+        dataBodyCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public Builder mergeStudent(com.baoge.protobuf.DataInfo.Student value) {
+        if (studentBuilder_ == null) {
+          if (dataBodyCase_ == 2 &&
+              dataBody_ != com.baoge.protobuf.DataInfo.Student.getDefaultInstance()) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Student.newBuilder((com.baoge.protobuf.DataInfo.Student) dataBody_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            dataBody_ = value;
+          }
+          onChanged();
+        } else {
+          if (dataBodyCase_ == 2) {
+            studentBuilder_.mergeFrom(value);
+          }
+          studentBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public Builder clearStudent() {
+        if (studentBuilder_ == null) {
+          if (dataBodyCase_ == 2) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+            onChanged();
+          }
+        } else {
+          if (dataBodyCase_ == 2) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+          }
+          studentBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public com.baoge.protobuf.DataInfo.Student.Builder getStudentBuilder() {
+        return getStudentFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      public com.baoge.protobuf.DataInfo.StudentOrBuilder getStudentOrBuilder() {
+        if ((dataBodyCase_ == 2) && (studentBuilder_ != null)) {
+          return studentBuilder_.getMessageOrBuilder();
+        } else {
+          if (dataBodyCase_ == 2) {
+            return (com.baoge.protobuf.DataInfo.Student) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Student student = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Student, com.baoge.protobuf.DataInfo.Student.Builder, com.baoge.protobuf.DataInfo.StudentOrBuilder> 
+          getStudentFieldBuilder() {
+        if (studentBuilder_ == null) {
+          if (!(dataBodyCase_ == 2)) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Student.getDefaultInstance();
+          }
+          studentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.baoge.protobuf.DataInfo.Student, com.baoge.protobuf.DataInfo.Student.Builder, com.baoge.protobuf.DataInfo.StudentOrBuilder>(
+                  (com.baoge.protobuf.DataInfo.Student) dataBody_,
+                  getParentForChildren(),
+                  isClean());
+          dataBody_ = null;
+        }
+        dataBodyCase_ = 2;
+        onChanged();;
+        return studentBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Dog, com.baoge.protobuf.DataInfo.Dog.Builder, com.baoge.protobuf.DataInfo.DogOrBuilder> dogBuilder_;
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       * @return Whether the dog field is set.
+       */
+      public boolean hasDog() {
+        return dataBodyCase_ == 3;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       * @return The dog.
+       */
+      public com.baoge.protobuf.DataInfo.Dog getDog() {
+        if (dogBuilder_ == null) {
+          if (dataBodyCase_ == 3) {
+            return (com.baoge.protobuf.DataInfo.Dog) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+        } else {
+          if (dataBodyCase_ == 3) {
+            return dogBuilder_.getMessage();
+          }
+          return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public Builder setDog(com.baoge.protobuf.DataInfo.Dog value) {
+        if (dogBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dataBody_ = value;
+          onChanged();
+        } else {
+          dogBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public Builder setDog(
+          com.baoge.protobuf.DataInfo.Dog.Builder builderForValue) {
+        if (dogBuilder_ == null) {
+          dataBody_ = builderForValue.build();
+          onChanged();
+        } else {
+          dogBuilder_.setMessage(builderForValue.build());
+        }
+        dataBodyCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public Builder mergeDog(com.baoge.protobuf.DataInfo.Dog value) {
+        if (dogBuilder_ == null) {
+          if (dataBodyCase_ == 3 &&
+              dataBody_ != com.baoge.protobuf.DataInfo.Dog.getDefaultInstance()) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Dog.newBuilder((com.baoge.protobuf.DataInfo.Dog) dataBody_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            dataBody_ = value;
+          }
+          onChanged();
+        } else {
+          if (dataBodyCase_ == 3) {
+            dogBuilder_.mergeFrom(value);
+          }
+          dogBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public Builder clearDog() {
+        if (dogBuilder_ == null) {
+          if (dataBodyCase_ == 3) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+            onChanged();
+          }
+        } else {
+          if (dataBodyCase_ == 3) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+          }
+          dogBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public com.baoge.protobuf.DataInfo.Dog.Builder getDogBuilder() {
+        return getDogFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      public com.baoge.protobuf.DataInfo.DogOrBuilder getDogOrBuilder() {
+        if ((dataBodyCase_ == 3) && (dogBuilder_ != null)) {
+          return dogBuilder_.getMessageOrBuilder();
+        } else {
+          if (dataBodyCase_ == 3) {
+            return (com.baoge.protobuf.DataInfo.Dog) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Dog dog = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Dog, com.baoge.protobuf.DataInfo.Dog.Builder, com.baoge.protobuf.DataInfo.DogOrBuilder> 
+          getDogFieldBuilder() {
+        if (dogBuilder_ == null) {
+          if (!(dataBodyCase_ == 3)) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+          }
+          dogBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.baoge.protobuf.DataInfo.Dog, com.baoge.protobuf.DataInfo.Dog.Builder, com.baoge.protobuf.DataInfo.DogOrBuilder>(
+                  (com.baoge.protobuf.DataInfo.Dog) dataBody_,
+                  getParentForChildren(),
+                  isClean());
+          dataBody_ = null;
+        }
+        dataBodyCase_ = 3;
+        onChanged();;
+        return dogBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Cat, com.baoge.protobuf.DataInfo.Cat.Builder, com.baoge.protobuf.DataInfo.CatOrBuilder> catBuilder_;
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       * @return Whether the cat field is set.
+       */
+      public boolean hasCat() {
+        return dataBodyCase_ == 4;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       * @return The cat.
+       */
+      public com.baoge.protobuf.DataInfo.Cat getCat() {
+        if (catBuilder_ == null) {
+          if (dataBodyCase_ == 4) {
+            return (com.baoge.protobuf.DataInfo.Cat) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+        } else {
+          if (dataBodyCase_ == 4) {
+            return catBuilder_.getMessage();
+          }
+          return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public Builder setCat(com.baoge.protobuf.DataInfo.Cat value) {
+        if (catBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dataBody_ = value;
+          onChanged();
+        } else {
+          catBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public Builder setCat(
+          com.baoge.protobuf.DataInfo.Cat.Builder builderForValue) {
+        if (catBuilder_ == null) {
+          dataBody_ = builderForValue.build();
+          onChanged();
+        } else {
+          catBuilder_.setMessage(builderForValue.build());
+        }
+        dataBodyCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public Builder mergeCat(com.baoge.protobuf.DataInfo.Cat value) {
+        if (catBuilder_ == null) {
+          if (dataBodyCase_ == 4 &&
+              dataBody_ != com.baoge.protobuf.DataInfo.Cat.getDefaultInstance()) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Cat.newBuilder((com.baoge.protobuf.DataInfo.Cat) dataBody_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            dataBody_ = value;
+          }
+          onChanged();
+        } else {
+          if (dataBodyCase_ == 4) {
+            catBuilder_.mergeFrom(value);
+          }
+          catBuilder_.setMessage(value);
+        }
+        dataBodyCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public Builder clearCat() {
+        if (catBuilder_ == null) {
+          if (dataBodyCase_ == 4) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+            onChanged();
+          }
+        } else {
+          if (dataBodyCase_ == 4) {
+            dataBodyCase_ = 0;
+            dataBody_ = null;
+          }
+          catBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public com.baoge.protobuf.DataInfo.Cat.Builder getCatBuilder() {
+        return getCatFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      public com.baoge.protobuf.DataInfo.CatOrBuilder getCatOrBuilder() {
+        if ((dataBodyCase_ == 4) && (catBuilder_ != null)) {
+          return catBuilder_.getMessageOrBuilder();
+        } else {
+          if (dataBodyCase_ == 4) {
+            return (com.baoge.protobuf.DataInfo.Cat) dataBody_;
+          }
+          return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .com.baoge.protobuf.Cat cat = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.baoge.protobuf.DataInfo.Cat, com.baoge.protobuf.DataInfo.Cat.Builder, com.baoge.protobuf.DataInfo.CatOrBuilder> 
+          getCatFieldBuilder() {
+        if (catBuilder_ == null) {
+          if (!(dataBodyCase_ == 4)) {
+            dataBody_ = com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+          }
+          catBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.baoge.protobuf.DataInfo.Cat, com.baoge.protobuf.DataInfo.Cat.Builder, com.baoge.protobuf.DataInfo.CatOrBuilder>(
+                  (com.baoge.protobuf.DataInfo.Cat) dataBody_,
+                  getParentForChildren(),
+                  isClean());
+          dataBody_ = null;
+        }
+        dataBodyCase_ = 4;
+        onChanged();;
+        return catBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.baoge.protobuf.MyMessage)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.baoge.protobuf.MyMessage)
+    private static final com.baoge.protobuf.DataInfo.MyMessage DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.baoge.protobuf.DataInfo.MyMessage();
+    }
+
+    public static com.baoge.protobuf.DataInfo.MyMessage getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<MyMessage>
+        PARSER = new com.google.protobuf.AbstractParser<MyMessage>() {
+      @java.lang.Override
+      public MyMessage parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new MyMessage(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<MyMessage> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<MyMessage> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.baoge.protobuf.DataInfo.MyMessage getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface StudentOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.baoge.protobuf.Student)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return Whether the name field is set.
      */
     boolean hasName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return The name.
      */
     java.lang.String getName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return The bytes for name.
      */
     com.google.protobuf.ByteString
@@ -164,14 +1549,14 @@ public final class DataInfo {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return Whether the name field is set.
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return The name.
      */
     public java.lang.String getName() {
@@ -189,7 +1574,7 @@ public final class DataInfo {
       }
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>optional string name = 1;</code>
      * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
@@ -275,10 +1660,6 @@ public final class DataInfo {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -615,9 +1996,6 @@ public final class DataInfo {
 
       @java.lang.Override
       public final boolean isInitialized() {
-        if (!hasName()) {
-          return false;
-        }
         return true;
       }
 
@@ -643,14 +2021,14 @@ public final class DataInfo {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @return Whether the name field is set.
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -668,7 +2046,7 @@ public final class DataInfo {
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -685,7 +2063,7 @@ public final class DataInfo {
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -700,7 +2078,7 @@ public final class DataInfo {
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -710,7 +2088,7 @@ public final class DataInfo {
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>optional string name = 1;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -898,11 +2276,1506 @@ public final class DataInfo {
 
   }
 
+  public interface DogOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.baoge.protobuf.Dog)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional int32 age = 2;</code>
+     * @return Whether the age field is set.
+     */
+    boolean hasAge();
+    /**
+     * <code>optional int32 age = 2;</code>
+     * @return The age.
+     */
+    int getAge();
+  }
+  /**
+   * Protobuf type {@code com.baoge.protobuf.Dog}
+   */
+  public  static final class Dog extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.baoge.protobuf.Dog)
+      DogOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Dog.newBuilder() to construct.
+    private Dog(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Dog() {
+      name_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Dog();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Dog(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              name_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              age_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Dog_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Dog_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.baoge.protobuf.DataInfo.Dog.class, com.baoge.protobuf.DataInfo.Dog.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object name_;
+    /**
+     * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The name.
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The bytes for name.
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int AGE_FIELD_NUMBER = 2;
+    private int age_;
+    /**
+     * <code>optional int32 age = 2;</code>
+     * @return Whether the age field is set.
+     */
+    public boolean hasAge() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>optional int32 age = 2;</code>
+     * @return The age.
+     */
+    public int getAge() {
+      return age_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeInt32(2, age_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, age_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.baoge.protobuf.DataInfo.Dog)) {
+        return super.equals(obj);
+      }
+      com.baoge.protobuf.DataInfo.Dog other = (com.baoge.protobuf.DataInfo.Dog) obj;
+
+      if (hasName() != other.hasName()) return false;
+      if (hasName()) {
+        if (!getName()
+            .equals(other.getName())) return false;
+      }
+      if (hasAge() != other.hasAge()) return false;
+      if (hasAge()) {
+        if (getAge()
+            != other.getAge()) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasName()) {
+        hash = (37 * hash) + NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getName().hashCode();
+      }
+      if (hasAge()) {
+        hash = (37 * hash) + AGE_FIELD_NUMBER;
+        hash = (53 * hash) + getAge();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Dog parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.baoge.protobuf.DataInfo.Dog prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.baoge.protobuf.Dog}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.baoge.protobuf.Dog)
+        com.baoge.protobuf.DataInfo.DogOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Dog_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Dog_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.baoge.protobuf.DataInfo.Dog.class, com.baoge.protobuf.DataInfo.Dog.Builder.class);
+      }
+
+      // Construct using com.baoge.protobuf.DataInfo.Dog.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        age_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Dog_descriptor;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Dog getDefaultInstanceForType() {
+        return com.baoge.protobuf.DataInfo.Dog.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Dog build() {
+        com.baoge.protobuf.DataInfo.Dog result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Dog buildPartial() {
+        com.baoge.protobuf.DataInfo.Dog result = new com.baoge.protobuf.DataInfo.Dog(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.age_ = age_;
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.baoge.protobuf.DataInfo.Dog) {
+          return mergeFrom((com.baoge.protobuf.DataInfo.Dog)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.baoge.protobuf.DataInfo.Dog other) {
+        if (other == com.baoge.protobuf.DataInfo.Dog.getDefaultInstance()) return this;
+        if (other.hasName()) {
+          bitField0_ |= 0x00000001;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasAge()) {
+          setAge(other.getAge());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.baoge.protobuf.DataInfo.Dog parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.baoge.protobuf.DataInfo.Dog) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 1;</code>
+       * @return Whether the name field is set.
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return The name.
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return The bytes for name.
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int age_ ;
+      /**
+       * <code>optional int32 age = 2;</code>
+       * @return Whether the age field is set.
+       */
+      public boolean hasAge() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>optional int32 age = 2;</code>
+       * @return The age.
+       */
+      public int getAge() {
+        return age_;
+      }
+      /**
+       * <code>optional int32 age = 2;</code>
+       * @param value The age to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAge(int value) {
+        bitField0_ |= 0x00000002;
+        age_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 age = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAge() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        age_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.baoge.protobuf.Dog)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.baoge.protobuf.Dog)
+    private static final com.baoge.protobuf.DataInfo.Dog DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.baoge.protobuf.DataInfo.Dog();
+    }
+
+    public static com.baoge.protobuf.DataInfo.Dog getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<Dog>
+        PARSER = new com.google.protobuf.AbstractParser<Dog>() {
+      @java.lang.Override
+      public Dog parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Dog(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Dog> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Dog> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.baoge.protobuf.DataInfo.Dog getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface CatOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.baoge.protobuf.Cat)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional string city = 2;</code>
+     * @return Whether the city field is set.
+     */
+    boolean hasCity();
+    /**
+     * <code>optional string city = 2;</code>
+     * @return The city.
+     */
+    java.lang.String getCity();
+    /**
+     * <code>optional string city = 2;</code>
+     * @return The bytes for city.
+     */
+    com.google.protobuf.ByteString
+        getCityBytes();
+  }
+  /**
+   * Protobuf type {@code com.baoge.protobuf.Cat}
+   */
+  public  static final class Cat extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.baoge.protobuf.Cat)
+      CatOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Cat.newBuilder() to construct.
+    private Cat(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Cat() {
+      name_ = "";
+      city_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Cat();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Cat(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              name_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              city_ = bs;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Cat_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Cat_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.baoge.protobuf.DataInfo.Cat.class, com.baoge.protobuf.DataInfo.Cat.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object name_;
+    /**
+     * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The name.
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 1;</code>
+     * @return The bytes for name.
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CITY_FIELD_NUMBER = 2;
+    private volatile java.lang.Object city_;
+    /**
+     * <code>optional string city = 2;</code>
+     * @return Whether the city field is set.
+     */
+    public boolean hasCity() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>optional string city = 2;</code>
+     * @return The city.
+     */
+    public java.lang.String getCity() {
+      java.lang.Object ref = city_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          city_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string city = 2;</code>
+     * @return The bytes for city.
+     */
+    public com.google.protobuf.ByteString
+        getCityBytes() {
+      java.lang.Object ref = city_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        city_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, city_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, city_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.baoge.protobuf.DataInfo.Cat)) {
+        return super.equals(obj);
+      }
+      com.baoge.protobuf.DataInfo.Cat other = (com.baoge.protobuf.DataInfo.Cat) obj;
+
+      if (hasName() != other.hasName()) return false;
+      if (hasName()) {
+        if (!getName()
+            .equals(other.getName())) return false;
+      }
+      if (hasCity() != other.hasCity()) return false;
+      if (hasCity()) {
+        if (!getCity()
+            .equals(other.getCity())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasName()) {
+        hash = (37 * hash) + NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getName().hashCode();
+      }
+      if (hasCity()) {
+        hash = (37 * hash) + CITY_FIELD_NUMBER;
+        hash = (53 * hash) + getCity().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.baoge.protobuf.DataInfo.Cat parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.baoge.protobuf.DataInfo.Cat prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.baoge.protobuf.Cat}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.baoge.protobuf.Cat)
+        com.baoge.protobuf.DataInfo.CatOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Cat_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Cat_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.baoge.protobuf.DataInfo.Cat.class, com.baoge.protobuf.DataInfo.Cat.Builder.class);
+      }
+
+      // Construct using com.baoge.protobuf.DataInfo.Cat.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        city_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.baoge.protobuf.DataInfo.internal_static_com_baoge_protobuf_Cat_descriptor;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Cat getDefaultInstanceForType() {
+        return com.baoge.protobuf.DataInfo.Cat.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Cat build() {
+        com.baoge.protobuf.DataInfo.Cat result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.baoge.protobuf.DataInfo.Cat buildPartial() {
+        com.baoge.protobuf.DataInfo.Cat result = new com.baoge.protobuf.DataInfo.Cat(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.city_ = city_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.baoge.protobuf.DataInfo.Cat) {
+          return mergeFrom((com.baoge.protobuf.DataInfo.Cat)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.baoge.protobuf.DataInfo.Cat other) {
+        if (other == com.baoge.protobuf.DataInfo.Cat.getDefaultInstance()) return this;
+        if (other.hasName()) {
+          bitField0_ |= 0x00000001;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasCity()) {
+          bitField0_ |= 0x00000002;
+          city_ = other.city_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.baoge.protobuf.DataInfo.Cat parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.baoge.protobuf.DataInfo.Cat) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 1;</code>
+       * @return Whether the name field is set.
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return The name.
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return The bytes for name.
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object city_ = "";
+      /**
+       * <code>optional string city = 2;</code>
+       * @return Whether the city field is set.
+       */
+      public boolean hasCity() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>optional string city = 2;</code>
+       * @return The city.
+       */
+      public java.lang.String getCity() {
+        java.lang.Object ref = city_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            city_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string city = 2;</code>
+       * @return The bytes for city.
+       */
+      public com.google.protobuf.ByteString
+          getCityBytes() {
+        java.lang.Object ref = city_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          city_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string city = 2;</code>
+       * @param value The city to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCity(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        city_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string city = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCity() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        city_ = getDefaultInstance().getCity();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string city = 2;</code>
+       * @param value The bytes for city to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCityBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        city_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.baoge.protobuf.Cat)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.baoge.protobuf.Cat)
+    private static final com.baoge.protobuf.DataInfo.Cat DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.baoge.protobuf.DataInfo.Cat();
+    }
+
+    public static com.baoge.protobuf.DataInfo.Cat getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<Cat>
+        PARSER = new com.google.protobuf.AbstractParser<Cat>() {
+      @java.lang.Override
+      public Cat parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Cat(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Cat> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Cat> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.baoge.protobuf.DataInfo.Cat getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_baoge_protobuf_MyMessage_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_baoge_protobuf_MyMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_baoge_protobuf_Student_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_baoge_protobuf_Student_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_baoge_protobuf_Dog_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_baoge_protobuf_Dog_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_baoge_protobuf_Cat_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_baoge_protobuf_Cat_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -913,20 +3786,46 @@ public final class DataInfo {
   static {
     java.lang.String[] descriptorData = {
       "\n\032src/protobuf/Student.proto\022\022com.baoge." +
-      "protobuf\"5\n\007Student\022\014\n\004name\030\001 \002(\t\022\013\n\003age" +
-      "\030\002 \001(\005\022\017\n\007address\030\003 \001(\tB \n\022com.baoge.pro" +
-      "tobufB\010DataInfoH\001"
+      "protobuf\"\211\002\n\tMyMessage\0229\n\tdata_type\030\001 \002(" +
+      "\0162&.com.baoge.protobuf.MyMessage.DataTyp" +
+      "e\022.\n\007student\030\002 \001(\0132\033.com.baoge.protobuf." +
+      "StudentH\000\022&\n\003dog\030\003 \001(\0132\027.com.baoge.proto" +
+      "buf.DogH\000\022&\n\003cat\030\004 \001(\0132\027.com.baoge.proto" +
+      "buf.CatH\000\"5\n\010DataType\022\017\n\013StudentType\020\001\022\013" +
+      "\n\007DogType\020\002\022\013\n\007CatType\020\003B\n\n\010dataBody\"5\n\007" +
+      "Student\022\014\n\004name\030\001 \001(\t\022\013\n\003age\030\002 \001(\005\022\017\n\007ad" +
+      "dress\030\003 \001(\t\" \n\003Dog\022\014\n\004name\030\001 \001(\t\022\013\n\003age\030" +
+      "\002 \001(\005\"!\n\003Cat\022\014\n\004name\030\001 \001(\t\022\014\n\004city\030\002 \001(\t" +
+      "B \n\022com.baoge.protobufB\010DataInfoH\001"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_com_baoge_protobuf_Student_descriptor =
+    internal_static_com_baoge_protobuf_MyMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_com_baoge_protobuf_MyMessage_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_baoge_protobuf_MyMessage_descriptor,
+        new java.lang.String[] { "DataType", "Student", "Dog", "Cat", "DataBody", });
+    internal_static_com_baoge_protobuf_Student_descriptor =
+      getDescriptor().getMessageTypes().get(1);
     internal_static_com_baoge_protobuf_Student_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_baoge_protobuf_Student_descriptor,
         new java.lang.String[] { "Name", "Age", "Address", });
+    internal_static_com_baoge_protobuf_Dog_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_baoge_protobuf_Dog_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_baoge_protobuf_Dog_descriptor,
+        new java.lang.String[] { "Name", "Age", });
+    internal_static_com_baoge_protobuf_Cat_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_baoge_protobuf_Cat_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_baoge_protobuf_Cat_descriptor,
+        new java.lang.String[] { "Name", "City", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
