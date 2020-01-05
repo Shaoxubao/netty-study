@@ -12,14 +12,36 @@ public class NioTest1 {
     public static void main(String[] args) {
         IntBuffer buffer = IntBuffer.allocate(10);
 
-        for (int i = 0; i < buffer.capacity(); i++) {
+        System.out.println("init capacity: " + buffer.capacity());
+        System.out.println("init limit: " + buffer.limit());
+        System.out.println("init position: " + buffer.position());
+
+        System.out.println("=======================");
+
+        for (int i = 0; i < 6; i++) {
             int randomInt = new SecureRandom().nextInt(20);
             buffer.put(randomInt);
         }
 
+        System.out.println("before flip capacity: " + buffer.capacity());
+        System.out.println("before flip limit: " + buffer.limit());
+        System.out.println("before flip position: " + buffer.position());
+
+        System.out.println("=======================");
+
         buffer.flip();
 
+        System.out.println("after flip capacity: " + buffer.capacity());
+        System.out.println("after flip limit: " + buffer.limit());
+        System.out.println("after flip position: " + buffer.position());
+
+        System.out.println("=======================");
+
         while (buffer.hasRemaining()) {
+            System.out.println("enter while loop capacity: " + buffer.capacity());
+            System.out.println("enter while loop limit: " + buffer.limit());
+            System.out.println("enter while loop position: " + buffer.position());
+
             System.out.println(buffer.get());
         }
 
