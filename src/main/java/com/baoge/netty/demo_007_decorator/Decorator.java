@@ -6,7 +6,7 @@ package com.baoge.netty.demo_007_decorator;
  * Date:   2020/1/5
  */
 
-// 装饰角色实现抽象角色
+// 装饰角色实现抽象角色，类似IO中的FilterInputStream
 public class Decorator implements Component {
 
     // 装饰角色要持有一个抽象角色引用

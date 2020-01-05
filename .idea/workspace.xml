@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eac97201-6f43-4d85-8f4d-cdf194b8f577" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="eac97201-6f43-4d85-8f4d-cdf194b8f577" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,7 +68,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="6" />
           <entry key="html" value="1" />
-          <entry key="java" value="111" />
+          <entry key="java" value="112" />
           <entry key="proto" value="9" />
         </counts>
       </usages-collector>
@@ -79,7 +76,7 @@
         <counts>
           <entry key="Groovy" value="6" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="112" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="PROTO" value="2" />
         </counts>
@@ -88,7 +85,7 @@
         <counts>
           <entry key="gradle" value="148" />
           <entry key="html" value="570" />
-          <entry key="java" value="3894" />
+          <entry key="java" value="3924" />
           <entry key="proto" value="682" />
         </counts>
       </usages-collector>
@@ -96,7 +93,7 @@
         <counts>
           <entry key="Groovy" value="148" />
           <entry key="HTML" value="570" />
-          <entry key="JAVA" value="3894" />
+          <entry key="JAVA" value="3924" />
           <entry key="PLAIN_TEXT" value="516" />
           <entry key="PROTO" value="166" />
         </counts>
@@ -105,39 +102,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/ConcreteComponent.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Component.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/ConcreteDecorator1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="33" />
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -698,9 +667,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="FilterInp&#9;PSI&#9;JAVA://java.io.FilterInputStream" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578203449026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578203752025" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -822,18 +792,17 @@
       <workItem from="1578129419750" duration="3229000" />
       <workItem from="1578139437274" duration="93000" />
       <workItem from="1578139560570" duration="4221000" />
-      <workItem from="1578146011758" duration="3224000" />
+      <workItem from="1578146011758" duration="3470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41523000" />
+    <option name="totallyTimeSpent" value="41769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26697892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26697892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -843,7 +812,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30622837" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38062283" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38062283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1216,13 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/ConcreteComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1269,8 +1231,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="575">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_007_decorator/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>

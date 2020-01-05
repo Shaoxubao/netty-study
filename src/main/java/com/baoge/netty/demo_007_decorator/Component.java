@@ -5,6 +5,8 @@ package com.baoge.netty.demo_007_decorator;
  * Author: Shao Xu Bao <15818589952@163.com>
  * Date:   2020/1/5
  */
+
+// 类似IO中的InputStream
 public interface Component {
 
     void doSomething();
