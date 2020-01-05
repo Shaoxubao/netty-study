@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
  * Author: Shao Xu Bao <15818589952@163.com>
  * Date:   2020/1/5
  *
- * slice Buffer
+ * slice Buffer与原Buffer共享相同的底层数组
  */
 public class NioTest6 {
 
