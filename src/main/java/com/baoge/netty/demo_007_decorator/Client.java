@@ -8,10 +8,20 @@ package com.baoge.netty.demo_007_decorator;
 public class Client {
 
     public static void main(String[] args) {
-        Component component = new ConcreteDecorator2(
-                new ConcreteDecorator1(new ConcreteComponent()));
 
-        component.doSomething();
+        Component component1 = new ConcreteComponent();
+        component1.doSomething();
+
+        System.out.println("=================");
+
+        Component component0 = new ConcreteDecorator1(new ConcreteComponent());
+        component0.doSomething();
+
+        System.out.println("=================");
+
+        Component component2 = new ConcreteDecorator2(
+                new ConcreteDecorator1(new ConcreteComponent()));
+        component2.doSomething();
     }
 
 }
