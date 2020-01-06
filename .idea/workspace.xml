@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eac97201-6f43-4d85-8f4d-cdf194b8f577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NioTest10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NioTest9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest_11_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12_client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,16 +55,16 @@
     <session id="-170380217">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,7 +73,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="6" />
           <entry key="html" value="1" />
-          <entry key="java" value="149" />
+          <entry key="java" value="156" />
           <entry key="proto" value="9" />
           <entry key="txt" value="14" />
         </counts>
@@ -87,7 +83,7 @@
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="6" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="149" />
+          <entry key="JAVA" value="156" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="PROTO" value="2" />
         </counts>
@@ -96,7 +92,7 @@
         <counts>
           <entry key="gradle" value="148" />
           <entry key="html" value="570" />
-          <entry key="java" value="6474" />
+          <entry key="java" value="7168" />
           <entry key="proto" value="682" />
           <entry key="txt" value="129" />
         </counts>
@@ -105,7 +101,7 @@
         <counts>
           <entry key="Groovy" value="148" />
           <entry key="HTML" value="570" />
-          <entry key="JAVA" value="6474" />
+          <entry key="JAVA" value="7168" />
           <entry key="PLAIN_TEXT" value="645" />
           <entry key="PROTO" value="166" />
         </counts>
@@ -114,11 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest11.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="502">
+              <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest_11_Client.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12_client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="-136">
+              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,6 +150,7 @@
       <find>junit</find>
       <find>堆外内存</find>
       <find>ServerSocketChannel</find>
+      <find>System.in</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -524,8 +521,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/MyChatServerInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/client/MyChatClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/client/MyChatClientInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/MyChatServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_004/MyServerInitializer.java" />
@@ -575,6 +570,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest10.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest11.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest_11_Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12_client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12.java" />
       </list>
     </option>
   </component>
@@ -605,9 +602,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -658,16 +652,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baoge" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="demo_002" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="netty-lecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="baoge" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
               <item name="demo_003" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -693,6 +677,17 @@
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-lecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="demo_008_nio" type="462c0819:PsiDirectoryNode" />
+              <item name="selector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -726,37 +721,35 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nio" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nio" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+              <item name="spi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -764,7 +757,7 @@
     <property name="SearchEverywhereHistoryKey" value="FilterInp&#9;PSI&#9;JAVA://java.io.FilterInputStream" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578241626969" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578324222339" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -792,7 +785,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioTest_11_Client">
+  <component name="RunManager" selected="Application.NioTest12_client">
     <configuration name="NioTest10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_008_nio.NioTest10" />
       <module name="netty-lecture_main" />
@@ -819,12 +812,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioTest8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_008_nio.NioTest8" />
+    <configuration name="NioTest12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_008_nio.selector.NioTest12" />
       <module name="netty-lecture_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.baoge.netty.demo_008_nio.*" />
+          <option name="PATTERN" value="com.baoge.netty.demo_008_nio.selector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -832,12 +825,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioTest9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_008_nio.NioTest9" />
+    <configuration name="NioTest12_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_008_nio.selector.NioTest12_client" />
       <module name="netty-lecture_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.baoge.netty.demo_008_nio.*" />
+          <option name="PATTERN" value="com.baoge.netty.demo_008_nio.selector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -859,19 +852,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NioTest8" />
-      <item itemvalue="Application.NioTest9" />
       <item itemvalue="Application.NioTest10" />
       <item itemvalue="Application.NioTest11" />
       <item itemvalue="Application.NioTest_11_Client" />
+      <item itemvalue="Application.NioTest12" />
+      <item itemvalue="Application.NioTest12_client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NioTest12_client" />
+        <item itemvalue="Application.NioTest12" />
         <item itemvalue="Application.NioTest_11_Client" />
         <item itemvalue="Application.NioTest11" />
         <item itemvalue="Application.NioTest10" />
-        <item itemvalue="Application.NioTest9" />
-        <item itemvalue="Application.NioTest8" />
       </list>
     </recent_temporary>
   </component>
@@ -896,18 +889,19 @@
       <workItem from="1578129419750" duration="3229000" />
       <workItem from="1578139437274" duration="93000" />
       <workItem from="1578139560570" duration="4221000" />
-      <workItem from="1578146011758" duration="19190000" />
+      <workItem from="1578146011758" duration="19373000" />
+      <workItem from="1578315249587" duration="6653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57489000" />
+    <option name="totallyTimeSpent" value="64325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18579236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11787666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -917,7 +911,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30622837" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25259516" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38754326" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -954,41 +948,16 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.9.1/7d38eb0e95e768cffecc61a2c2ef2311c2e8453e/protobuf-java-3.9.1-sources.jar!/com/google/protobuf/Descriptors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="402" column="33" selection-start-line="402" selection-start-column="33" selection-end-line="402" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.11.1/790213fca2554a533dad59ad22fa9da498f419f3/protobuf-java-3.11.1-sources.jar!/com/google/protobuf/Descriptors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="402" column="33" selection-start-line="402" selection-start-column="33" selection-end-line="402" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_005/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protobuf/ProtoBufTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1007,9 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,9 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,9 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,9 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="31" column="57" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,9 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,10 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,12 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,12 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,9 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="280" column="11" lean-forward="true" selection-start-line="280" selection-start-column="11" selection-end-line="280" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#27920#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,10 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NioTest3#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1184,10 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NioTest2#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,10 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NioTest1#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,10 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="41" column="33" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NioTest4#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1273,9 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#6094#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1308,9 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,9 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1349,9 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1359,13 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/client/MyChatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1378,18 +1272,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest11.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="225">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/javatools/jdk1.8.0/jdk/src.zip!/java/nio/channels/spi/AbstractSelectableChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="283" column="66" selection-start-line="283" selection-start-column="61" selection-end-line="283" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/NioTest_11_Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="102">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_003/client/MyChatClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javatools/jdk1.8.0/jdk/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12_client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_008_nio/selector/NioTest12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
