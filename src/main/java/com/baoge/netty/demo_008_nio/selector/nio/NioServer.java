@@ -17,6 +17,8 @@ import java.util.UUID;
  * Copyright 2018-2028 Baoge All Rights Reserved.
  * Author: Shao Xu Bao <15818589952@163.com>
  * Date:   2020/1/12
+ *
+ * 启动NioServer后，可启动多个NioClient，然后演示在客户端发送数据，服务器和其他客户端都会接收到所发送的数据
  */
 public class NioServer {
 
