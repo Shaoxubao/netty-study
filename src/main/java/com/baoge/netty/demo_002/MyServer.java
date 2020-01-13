@@ -14,8 +14,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class MyServer {
 
     public static void main(String[] args) throws Exception {
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        // NioEventLoopGroup：异步事件循环组，可加参数，表示线程数
+        EventLoopGroup bossGroup = new NioEventLoopGroup();   // 接收客户端的连接
+        EventLoopGroup workerGroup = new NioEventLoopGroup(); // 正真完成用户请求
 
         try {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
