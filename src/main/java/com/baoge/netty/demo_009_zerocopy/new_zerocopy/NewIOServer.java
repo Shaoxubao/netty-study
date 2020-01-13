@@ -26,13 +26,17 @@ public class NewIOServer {
             SocketChannel socketChannel = serverSocketChannel.accept();
             socketChannel.configureBlocking(true);
 
+            int totalCount = 0;
             int readCount = 0;
             while (-1 != readCount) {
                 readCount = socketChannel.read(byteBuffer);
+                totalCount += readCount;
 
                 // position归位为0
                 byteBuffer.rewind();
             }
+
+            System.out.println("服务端接收总字节数：" + totalCount);
         }
     }
 }

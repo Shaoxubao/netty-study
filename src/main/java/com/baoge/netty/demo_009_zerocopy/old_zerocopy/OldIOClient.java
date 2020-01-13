@@ -15,7 +15,7 @@ public class OldIOClient {
     public static void main(String[] args) throws Exception {
         Socket socket = new Socket("localhost", 8899);
 
-        String fileName = "";
+        String fileName = "E:/gradle-4.7-all.zip";
         InputStream inputStream = new FileInputStream(fileName);
 
         // 数据输出流

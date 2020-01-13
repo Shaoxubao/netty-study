@@ -17,7 +17,7 @@ public class NewIOClient {
         socketChannel.connect(new InetSocketAddress("localhost", 8899));
         socketChannel.configureBlocking(true);
 
-        String fileName = "";
+        String fileName = "E:/gradle-4.7-all.zip";
         FileChannel fileChannel = new FileInputStream(fileName).getChannel();
 
         long startTime = System.currentTimeMillis();
@@ -28,6 +28,7 @@ public class NewIOClient {
         System.out.println("发送总字节数：" + transferCount + "， 耗时：" + (System.currentTimeMillis() - startTime));
 
         fileChannel.close();
+        socketChannel.close();
     }
 
 }
