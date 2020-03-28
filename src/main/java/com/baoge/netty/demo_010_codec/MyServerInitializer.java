@@ -3,6 +3,7 @@ package com.baoge.netty.demo_010_codec;
 import com.baoge.netty.demo_010_codec.codec.MyByteToLongDecoder;
 import com.baoge.netty.demo_010_codec.codec.MyByteToLongDecoder2;
 import com.baoge.netty.demo_010_codec.codec.MyLongToByteEncoder;
+import com.baoge.netty.demo_010_codec.codec.MyLongToStringDecoder;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -22,6 +23,7 @@ public class MyServerInitializer extends ChannelInitializer<SocketChannel> {
         // 自定义解码器，将接收客户端的字节流解码成Long类型
 //        pipeline.addLast(new MyByteToLongDecoder());
         pipeline.addLast(new MyByteToLongDecoder2());
+        pipeline.addLast(new MyLongToStringDecoder());
         pipeline.addLast(new MyLongToByteEncoder());
 
         pipeline.addLast(new MyServerHandler()); // 业务处理器

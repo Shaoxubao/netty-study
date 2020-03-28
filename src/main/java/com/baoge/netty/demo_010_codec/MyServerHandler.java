@@ -8,10 +8,10 @@ import io.netty.channel.SimpleChannelInboundHandler;
  * Author: Shao Xu Bao <15818589952@163.com>
  * Date:   2020/1/1
  */
-public class MyServerHandler extends SimpleChannelInboundHandler<Long> {
+public class MyServerHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, Long msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
         System.out.println(ctx.channel().remoteAddress() + ", " + msg);
 
         ctx.writeAndFlush(654321L);
