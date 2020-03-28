@@ -1,6 +1,7 @@
 package com.baoge.netty.demo_010_codec.client;
 
 import com.baoge.netty.demo_010_codec.codec.MyByteToLongDecoder;
+import com.baoge.netty.demo_010_codec.codec.MyByteToLongDecoder2;
 import com.baoge.netty.demo_010_codec.codec.MyLongToByteEncoder;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -17,7 +18,8 @@ public class MyClientInitializer extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
 
-        pipeline.addLast(new MyByteToLongDecoder());
+//        pipeline.addLast(new MyByteToLongDecoder());
+        pipeline.addLast(new MyByteToLongDecoder2());
         pipeline.addLast(new MyLongToByteEncoder());
 
         pipeline.addLast(new MyClientHandler());

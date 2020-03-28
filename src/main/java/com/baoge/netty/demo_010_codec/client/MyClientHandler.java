@@ -25,8 +25,8 @@ public class MyClientHandler extends SimpleChannelInboundHandler<Long> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-//        ctx.writeAndFlush(123456L); // 客户端启动后向服务端发送数据
-//
+        ctx.writeAndFlush(123456L); // 客户端启动后向服务端发送数据
+
 //        ctx.writeAndFlush(1L);
 //        ctx.writeAndFlush(2L);
 //        ctx.writeAndFlush(3L);
@@ -35,7 +35,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<Long> {
 //        ctx.writeAndFlush("hello world"); // 消息发送不出去（类型不匹配）
 
         // 消息发送出去（类型是ByteBuf）,但是编码器不执行（类型不匹配），服务端接收
-        ctx.writeAndFlush(Unpooled.copiedBuffer("hello world", Charset.forName("utf-8")));
+//        ctx.writeAndFlush(Unpooled.copiedBuffer("hello world", Charset.forName("utf-8")));
 
     }
 
