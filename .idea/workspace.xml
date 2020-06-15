@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917ae22f-bb66-4fa1-8e32-518f5e7abad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,57 +33,79 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="43" />
+          <entry key="java" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="43" />
+          <entry key="JAVA" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="463" />
-          <entry key="txt" value="4" />
+          <entry key="java" value="469" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="463" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="469" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderServer.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="228">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#889#1926#0" expanded="true" />
-                <element signature="e#1310#1930#0" expanded="true" />
-                <element signature="e#1929#1930#0" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
+                <element signature="e#880#1594#0" expanded="true" />
+                <element signature="e#1317#1666#0" expanded="true" />
+                <element signature="e#1665#1666#0" expanded="true" />
+                <element signature="e#1593#1594#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderClient.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="401">
+              <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#877#1868#0" expanded="true" />
-                <element signature="e#1020#1790#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#883#1658#0" expanded="true" />
+                <element signature="e#1383#1714#0" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/LengthFieldBasedFrameDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="235" column="10" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/javatools/jdk1.8/jdk/src.zip!/java/nio/ByteOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+              <folding>
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -416,6 +438,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_014_encode_decode/DelimiterBasedFrameDecoderClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderServer.java" />
       </list>
     </option>
   </component>
@@ -496,7 +520,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baoge" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="demo_015_encode_decode" type="462c0819:PsiDirectoryNode" />
+              <item name="demo_016_encode_decode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
@@ -519,6 +543,14 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
@@ -593,7 +625,7 @@
     <property name="SearchEverywhereHistoryKey" value="NioEventLoop&#9;PSI&#9;JAVA://io.netty.channel.nio.NioEventLoop" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592210849583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592215351243" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -611,22 +643,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FixedLengthFrameDecoderClient">
+  <component name="RunManager" selected="Application.LengthFieldBasedFrameDecoderClient">
     <configuration name="DelimiterBasedFrameDecoderClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_014_encode_decode.DelimiterBasedFrameDecoderClient" />
-      <module name="netty-lecture_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoge.netty.demo_014_encode_decode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DelimiterBasedFrameDecoderServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_014_encode_decode.DelimiterBasedFrameDecoderServer" />
       <module name="netty-lecture_main" />
       <extension name="coverage">
         <pattern>
@@ -664,12 +683,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineBasedFrameDecoderClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_013_encode_decode.LineBasedFrameDecoderClient" />
+    <configuration name="LengthFieldBasedFrameDecoderClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_016_encode_decode.LengthFieldBasedFrameDecoderClient" />
       <module name="netty-lecture_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.baoge.netty.demo_013_encode_decode.*" />
+          <option name="PATTERN" value="com.baoge.netty.demo_016_encode_decode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthFieldBasedFrameDecoderServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_016_encode_decode.LengthFieldBasedFrameDecoderServer" />
+      <module name="netty-lecture_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.netty.demo_016_encode_decode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -740,19 +772,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.LineBasedFrameDecoderClient" />
-      <item itemvalue="Application.DelimiterBasedFrameDecoderServer" />
       <item itemvalue="Application.DelimiterBasedFrameDecoderClient" />
       <item itemvalue="Application.FixedLengthFrameDecoderServer" />
       <item itemvalue="Application.FixedLengthFrameDecoderClient" />
+      <item itemvalue="Application.LengthFieldBasedFrameDecoderServer" />
+      <item itemvalue="Application.LengthFieldBasedFrameDecoderClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LengthFieldBasedFrameDecoderClient" />
+        <item itemvalue="Application.LengthFieldBasedFrameDecoderServer" />
         <item itemvalue="Application.FixedLengthFrameDecoderClient" />
         <item itemvalue="Application.FixedLengthFrameDecoderServer" />
         <item itemvalue="Application.DelimiterBasedFrameDecoderClient" />
-        <item itemvalue="Application.DelimiterBasedFrameDecoderServer" />
-        <item itemvalue="Application.LineBasedFrameDecoderClient" />
       </list>
     </recent_temporary>
   </component>
@@ -771,7 +803,7 @@
       <workItem from="1579242412926" duration="31000" />
       <workItem from="1582080479219" duration="3033000" />
       <workItem from="1590980846869" duration="1524000" />
-      <workItem from="1592205306172" duration="5521000" />
+      <workItem from="1592205306172" duration="7658000" />
     </task>
     <task id="LOCAL-00001" summary="LineBasedFrameDecoder案例">
       <created>1592209062273</created>
@@ -794,11 +826,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592210270079</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="定长协议FixedLengthFrameDecoder案例">
+      <created>1592210889508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592210889508</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12838000" />
+    <option name="totallyTimeSpent" value="14975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -813,7 +852,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26927254" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26927254" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.20304017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -851,7 +890,8 @@
     <MESSAGE value="LineBasedFrameDecoder案例" />
     <MESSAGE value="DelimiterBasedFrameDecoder+Base64Decoder案例" />
     <MESSAGE value="DelimiterBasedFrameDecoder+Base64Decoder案例注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="DelimiterBasedFrameDecoder+Base64Decoder案例注释" />
+    <MESSAGE value="定长协议FixedLengthFrameDecoder案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="定长协议FixedLengthFrameDecoder案例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,13 +1198,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="570">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#877#1868#0" expanded="true" />
             <element signature="e#1020#1790#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
             <element signature="e#1867#1868#0" expanded="true" />
           </folding>
         </state>
@@ -1172,8 +1211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="78">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#889#1926#0" expanded="true" />
@@ -1181,6 +1220,52 @@
             <element signature="e#1929#1930#0" expanded="true" />
             <element signature="e#1925#1926#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#880#1594#0" expanded="true" />
+            <element signature="e#1317#1666#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#883#1658#0" expanded="true" />
+            <element signature="e#1383#1714#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javatools/jdk1.8/jdk/src.zip!/java/nio/ByteOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+          <folding>
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/LengthFieldBasedFrameDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="235" column="10" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
         </state>
       </provider>
     </entry>
