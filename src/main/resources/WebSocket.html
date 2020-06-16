@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<form onsubmit="return false;">
+    <h1> Netty WebSocket 协议 </h1>
+    <h3>客户端请求消息</h3>
+    <textarea id="requestText" style="width:200px;height:100px;"></textarea>
+    <input type="button" value="发送WebSocket请求消息" onclick="send(document.getElementById('requestText').value)"/>
+    <h3>服务端返回的应答消息</h3>
+    <textarea id="responseText" style="width:200px;height:100px;"></textarea>
+</form>
+
+<script type="text/javascript">
+    window.WebSocket = window.WebSocket || window.MozWebSocket;
+    if (!window.WebSocket) {
+        alert("你的浏览器不支持websocket协议");
+    } else {
+        // websocket协议连接的创建
+        var socket = new WebSocket("ws://localhost:8080/websocket");
+        socket.onmessage = function (event) {
+            var ta = document.getElementById('responseText');
+            ta.value = event.data
+        };
+        socket.onopen = function (event) {
+            alert("websocket连接建立成功...");
+        };
+        socket.onclose = function (event) {
+            alert("连接关闭");
+        };
+
+        function send(message) {
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+                socket.send(message);
+            }
+            else {
+                alert("WebSocket not supported by this browser");
+            }
+        }
+    }
+</script>
+</body>
+</html>
