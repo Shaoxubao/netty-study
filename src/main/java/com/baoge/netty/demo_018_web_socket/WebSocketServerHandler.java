@@ -49,8 +49,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
     private void handleHttpRequest(ChannelHandlerContext ctx, FullHttpRequest req) throws Exception {
 
         // 如果HTTP解码失败，返回HHTP异常
-        if (!req.getDecoderResult().isSuccess()
-                || (!"websocket".equals(req.headers().get("Upgrade")))) {
+        if (!req.getDecoderResult().isSuccess() || (!"websocket".equals(req.headers().get("Upgrade")))) {
             sendHttpResponse(ctx, req, new DefaultFullHttpResponse(HTTP_1_1, BAD_REQUEST));
             return;
         }
@@ -60,8 +59,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
                 "ws://localhost:8080/websocket", null, false);
         handshaker = wsFactory.newHandshaker(req);
         if (handshaker == null) {
-            WebSocketServerHandshakerFactory
-                    .sendUnsupportedVersionResponse(ctx.channel());
+            WebSocketServerHandshakerFactory.sendUnsupportedVersionResponse(ctx.channel());
         } else {
             handshaker.handshake(ctx.channel(), req);
         }
@@ -79,14 +77,12 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
         // 判断是否是关闭链路的指令
         if (frame instanceof CloseWebSocketFrame) {
-            handshaker.close(ctx.channel(),
-                    (CloseWebSocketFrame) frame.retain());
+            handshaker.close(ctx.channel(), (CloseWebSocketFrame) frame.retain());
             return;
         }
         // 判断是否是Ping消息
         if (frame instanceof PingWebSocketFrame) {
-            ctx.channel().write(
-                    new PongWebSocketFrame(frame.content().retain()));
+            ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
             return;
         }
         // 本例程仅支持文本消息，不支持二进制消息
@@ -106,8 +102,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
     private static void sendHttpResponse(ChannelHandlerContext ctx, FullHttpRequest req, FullHttpResponse res) {
         // 返回应答给客户端
         if (res.getStatus().code() != 200) {
-            ByteBuf buf = Unpooled.copiedBuffer(res.getStatus().toString(),
-                    CharsetUtil.UTF_8);
+            ByteBuf buf = Unpooled.copiedBuffer(res.getStatus().toString(), CharsetUtil.UTF_8);
             res.content().writeBytes(buf);
             buf.release();
             setContentLength(res, res.content().readableBytes());

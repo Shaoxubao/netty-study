@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917ae22f-bb66-4fa1-8e32-518f5e7abad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WebSocket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -137,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            <state relative-caret-position="292">
+              <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -605,7 +602,7 @@
     <property name="SearchEverywhereHistoryKey" value="NioEventLoop&#9;PSI&#9;JAVA://io.netty.channel.nio.NioEventLoop" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592296577673" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592296641826" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -774,7 +771,7 @@
       <workItem from="1582080479219" duration="3033000" />
       <workItem from="1590980846869" duration="1524000" />
       <workItem from="1592205306172" duration="7861000" />
-      <workItem from="1592270227186" duration="12365000" />
+      <workItem from="1592270227186" duration="12436000" />
     </task>
     <task id="LOCAL-00001" summary="LineBasedFrameDecoder案例">
       <created>1592209062273</created>
@@ -825,11 +822,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592291359616</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WebSocket案例">
+      <created>1592296617848</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592296617848</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27543000" />
+    <option name="totallyTimeSpent" value="27614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -844,7 +848,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21498372" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21498372" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31921825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -886,7 +890,8 @@
     <MESSAGE value="变长协议LengthFieldBasedFrameDecoder案例" />
     <MESSAGE value="LengthFieldBasedFrameDecoder案例注释" />
     <MESSAGE value="JdkSerializer序列化案例" />
-    <option name="LAST_COMMIT_MESSAGE" value="JdkSerializer序列化案例" />
+    <MESSAGE value="WebSocket案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebSocket案例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1378,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="292">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
