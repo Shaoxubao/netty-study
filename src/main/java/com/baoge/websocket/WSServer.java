@@ -26,9 +26,9 @@ public class WSServer {
                     .childHandler(new WSServerInitialzer());
 
             ChannelFuture future = serverBootstrap.bind(8088).sync();
-            future.channel().closeFuture().sync();
+            System.out.println("WSServer started.");
 
-            System.out.println("");
+            future.channel().closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
