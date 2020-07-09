@@ -19,12 +19,12 @@ public class RedisClient {
     String host;    // 目标主机
     int port;       // 目标主机端口
 
-    public RedisClient(String host,int port){
+    public RedisClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    public void start() throws Exception{
+    public void start() throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap bootstrap = new Bootstrap();
@@ -36,15 +36,15 @@ public class RedisClient {
             System.out.println(" connected to host : " + host + ", port : " + port);
             System.out.println(" type redis's command to communicate with redis-server or type 'quit' to shutdown ");
             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-            ChannelFuture lastWriteFuture = null;
-            for (;;) {
+            ChannelFuture channelFuture = null;
+            for (; ; ) {
                 String s = in.readLine();
-                if(s.equalsIgnoreCase("quit")) {
+                if (s.equalsIgnoreCase("quit")) {
                     break;
                 }
                 System.out.print(">");
-                lastWriteFuture = channel.writeAndFlush(s);
-                lastWriteFuture.addListener(new GenericFutureListener<ChannelFuture>() {
+                channelFuture = channel.writeAndFlush(s);
+                channelFuture.addListener(new GenericFutureListener<ChannelFuture>() {
                     @Override
                     public void operationComplete(ChannelFuture future) throws Exception {
                         if (!future.isSuccess()) {
@@ -54,17 +54,17 @@ public class RedisClient {
                     }
                 });
             }
-            if (lastWriteFuture != null) {
-                lastWriteFuture.sync();
+            if (channelFuture != null) {
+                channelFuture.sync();
             }
             System.out.println(" bye ");
-        }finally {
+        } finally {
             group.shutdownGracefully();
         }
     }
 
-    public static void main(String[] args) throws Exception{
-        RedisClient client = new RedisClient("127.0.0.1",6379);
+    public static void main(String[] args) throws Exception {
+        RedisClient client = new RedisClient("127.0.0.1", 6379);
         client.start();
     }
 

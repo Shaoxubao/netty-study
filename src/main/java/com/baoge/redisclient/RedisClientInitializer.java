@@ -8,7 +8,7 @@ import io.netty.handler.codec.redis.RedisBulkStringAggregator;
 import io.netty.handler.codec.redis.RedisDecoder;
 import io.netty.handler.codec.redis.RedisEncoder;
 
-public class RedisClientInitializer extends ChannelInitializer<Channel>{
+public class RedisClientInitializer extends ChannelInitializer<Channel> {
 
     @Override
     protected void initChannel(Channel ch) throws Exception {
