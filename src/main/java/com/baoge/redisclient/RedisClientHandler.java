@@ -12,9 +12,6 @@ import io.netty.util.ReferenceCountUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 2018/11/19.
- */
 public class RedisClientHandler extends ChannelDuplexHandler {
 
 
