@@ -22,10 +22,10 @@ public class MyPersonDecoder extends ReplayingDecoder<Void> {
         byte[] content = new byte[length];
         in.readBytes(content);
 
-        PersonProtocol perdonProtocol = new PersonProtocol();
-        perdonProtocol.setLength(length);
-        perdonProtocol.setContent(content);
+        PersonProtocol personProtocol = new PersonProtocol();
+        personProtocol.setLength(length);
+        personProtocol.setContent(content);
 
-        out.add(perdonProtocol);
+        out.add(personProtocol);
     }
 }
