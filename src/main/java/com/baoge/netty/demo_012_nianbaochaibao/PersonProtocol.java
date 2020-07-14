@@ -5,7 +5,7 @@ package com.baoge.netty.demo_012_nianbaochaibao;
  * Author: Shao Xu Bao <xubao_shao@163.com>
  * Date:   2020/3/28
  */
-public class PerdonProtocol {
+public class PersonProtocol {
 
     private int length;
 

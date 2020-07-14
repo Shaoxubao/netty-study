@@ -1,6 +1,6 @@
 package com.baoge.netty.demo_012_nianbaochaibao.client;
 
-import com.baoge.netty.demo_012_nianbaochaibao.PerdonProtocol;
+import com.baoge.netty.demo_012_nianbaochaibao.PersonProtocol;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
@@ -11,7 +11,7 @@ import java.nio.charset.Charset;
  * Author: Shao Xu Bao <xubao_shao@163.com>
  * Date:   2020/3/28
  */
-public class MyClientHandler extends SimpleChannelInboundHandler<PerdonProtocol>  {
+public class MyClientHandler extends SimpleChannelInboundHandler<PersonProtocol>  {
 
     private int count;
 
@@ -23,7 +23,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<PerdonProtocol>
             int length = message.getBytes("utf-8").length;
             byte[] content = message.getBytes("utf-8");
 
-            PerdonProtocol perdonProtocol = new PerdonProtocol();
+            PersonProtocol perdonProtocol = new PersonProtocol();
             perdonProtocol.setLength(length);
             perdonProtocol.setContent(content);
 
@@ -33,7 +33,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<PerdonProtocol>
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, PerdonProtocol msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, PersonProtocol msg) throws Exception {
         int length = msg.getLength();
         byte[] content = msg.getContent();
 

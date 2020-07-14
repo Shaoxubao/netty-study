@@ -11,12 +11,12 @@ import java.util.UUID;
  * Author: Shao Xu Bao <xubao_shao@163.com>
  * Date:   2020/3/28
  */
-public class MyServerHandler extends SimpleChannelInboundHandler<PerdonProtocol> {
+public class MyServerHandler extends SimpleChannelInboundHandler<PersonProtocol> {
 
     private int count;
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, PerdonProtocol msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, PersonProtocol msg) throws Exception {
         int length = msg.getLength();
         byte[] content = msg.getContent();
 
@@ -29,7 +29,7 @@ public class MyServerHandler extends SimpleChannelInboundHandler<PerdonProtocol>
         int responseLength = responseMessage.getBytes("utf-8").length;
         byte[] responseContent = responseMessage.getBytes("utf-8");
 
-        PerdonProtocol responseProtocol = new PerdonProtocol();
+        PersonProtocol responseProtocol = new PersonProtocol();
         responseProtocol.setLength(responseLength);
         responseProtocol.setContent(responseContent);
 

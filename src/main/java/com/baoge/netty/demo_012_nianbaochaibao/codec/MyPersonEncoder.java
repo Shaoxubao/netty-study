@@ -1,6 +1,6 @@
 package com.baoge.netty.demo_012_nianbaochaibao.codec;
 
-import com.baoge.netty.demo_012_nianbaochaibao.PerdonProtocol;
+import com.baoge.netty.demo_012_nianbaochaibao.PersonProtocol;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
@@ -10,10 +10,10 @@ import io.netty.handler.codec.MessageToByteEncoder;
  * Author: Shao Xu Bao <xubao_shao@163.com>
  * Date:   2020/3/28
  */
-public class MyPersonEncoder extends MessageToByteEncoder<PerdonProtocol> {
+public class MyPersonEncoder extends MessageToByteEncoder<PersonProtocol> {
 
     @Override
-    protected void encode(ChannelHandlerContext ctx, PerdonProtocol msg, ByteBuf out) {
+    protected void encode(ChannelHandlerContext ctx, PersonProtocol msg, ByteBuf out) {
         System.out.println("MyPersonEncoder encode invoked.");
 
         out.writeInt(msg.getLength());

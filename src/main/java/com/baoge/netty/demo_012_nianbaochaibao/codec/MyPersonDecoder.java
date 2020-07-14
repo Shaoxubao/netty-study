@@ -1,6 +1,6 @@
 package com.baoge.netty.demo_012_nianbaochaibao.codec;
 
-import com.baoge.netty.demo_012_nianbaochaibao.PerdonProtocol;
+import com.baoge.netty.demo_012_nianbaochaibao.PersonProtocol;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
@@ -22,7 +22,7 @@ public class MyPersonDecoder extends ReplayingDecoder<Void> {
         byte[] content = new byte[length];
         in.readBytes(content);
 
-        PerdonProtocol perdonProtocol = new PerdonProtocol();
+        PersonProtocol perdonProtocol = new PersonProtocol();
         perdonProtocol.setLength(length);
         perdonProtocol.setContent(content);
 
