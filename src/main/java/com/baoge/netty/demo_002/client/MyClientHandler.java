@@ -23,7 +23,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        ctx.writeAndFlush("hello server.");
+        ctx.writeAndFlush("hello server."); // 13byte
     }
 
     @Override
