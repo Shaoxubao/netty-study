@@ -23,11 +23,11 @@ public class MyClientHandler extends SimpleChannelInboundHandler<PersonProtocol>
             int length = message.getBytes("utf-8").length;
             byte[] content = message.getBytes("utf-8");
 
-            PersonProtocol perdonProtocol = new PersonProtocol();
-            perdonProtocol.setLength(length);
-            perdonProtocol.setContent(content);
+            PersonProtocol personProtocol = new PersonProtocol();
+            personProtocol.setLength(length);
+            personProtocol.setContent(content);
 
-            ctx.writeAndFlush(perdonProtocol);
+            ctx.writeAndFlush(personProtocol);
 
         }
     }
