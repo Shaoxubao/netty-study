@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917ae22f-bb66-4fa1-8e32-518f5e7abad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/RequestMessagePacketDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/RequestMessagePacketEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/ResponseMessagePacketDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/ResponseMessagePacketEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/BaseMessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/ProtocolConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/RequestMessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/ResponseMessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/serializer/FastJsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/util/ByteBufferUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/util/SerialNumberUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/LineStringDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespArrayDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespBulkStringDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespErrorDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespIntegerDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespSimpleStringDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/constant/ReplyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/constant/RespConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test_main/DecoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/utils/CodecUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -79,19 +78,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="gradle" value="6" />
+          <entry key="class" value="2" />
+          <entry key="gradle" value="7" />
           <entry key="html" value="1" />
-          <entry key="java" value="247" />
+          <entry key="java" value="314" />
           <entry key="properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="Groovy" value="6" />
+          <entry key="CLASS" value="2" />
+          <entry key="Groovy" value="7" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="247" />
+          <entry key="JAVA" value="314" />
           <entry key="Properties" value="3" />
         </counts>
       </usages-collector>
@@ -99,16 +98,16 @@
         <counts>
           <entry key="gradle" value="57" />
           <entry key="html" value="4" />
-          <entry key="java" value="1676" />
-          <entry key="txt" value="63" />
+          <entry key="java" value="1769" />
+          <entry key="txt" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="57" />
           <entry key="HTML" value="4" />
-          <entry key="JAVA" value="1676" />
-          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="JAVA" value="1769" />
+          <entry key="PLAIN_TEXT" value="72" />
         </counts>
       </usages-collector>
     </session>
@@ -116,38 +115,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolServer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test_main/DecoderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+            <state relative-caret-position="418">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#933#2773#0" expanded="true" />
-                <element signature="e#3137#3138#0" expanded="true" />
-                <element signature="e#2772#2773#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -484,24 +458,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_010_codec/codec/MyLongToByteEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_010_codec/MyServerInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_013_encode_decode/LineBasedFrameDecoderServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_013_encode_decode/LineBasedFrameDecoderClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_014_encode_decode/DelimiterBasedFrameDecoderServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_014_encode_decode/DelimiterBasedFrameDecoderClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_015_encode_decode/FixedLengthFrameDecoderServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_017_serializer/JdkSerializerClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_017_serializer/JdkSerializerServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_017_serializer/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_017_serializer/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/WebSocket.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_018_web_socket/WebSocketServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redisclient/RedisClientInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/redisclient/RedisClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/redisclient/RedisClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_019_codec_chinese/ChineseMessage.java" />
@@ -515,8 +471,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_002/client/MyClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/client/MyClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/MessageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/BaseMessagePacket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/RequestMessagePacket.java" />
@@ -535,6 +489,26 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/CodecUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/LineStringDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespSimpleStringDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespCodec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/ReplyType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespCodec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespErrorDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespIntegerDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespArrayDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DecoderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test/DecoderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/utils/CodecUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/constant/ReplyType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespBulkStringDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test_main/DecoderTest.java" />
       </list>
     </option>
   </component>
@@ -621,22 +595,37 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baoge" type="462c0819:PsiDirectoryNode" />
-              <item name="protocol_custom" type="462c0819:PsiDirectoryNode" />
+              <item name="redis_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="netty-study" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="redis_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="netty-study" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="webchat" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="redis_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="test_main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-study" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="redis_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
@@ -666,15 +655,66 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="buffer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="channel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="codec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-lecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: io.netty:netty-all:4.1.15.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="netty-all-4.1.15.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -690,7 +730,7 @@
     <property name="SearchEverywhereHistoryKey" value="FrameDecoder&#9;PSI&#9;JAVA://io.netty.handler.codec.http2.Http2ConnectionHandler.FrameDecoder&#10;NioEventLoop&#9;PSI&#9;JAVA://io.netty.channel.nio.NioEventLoop" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594801859560" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594883756759" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -708,7 +748,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestProtocolClient">
+  <component name="RunManager" selected="Application.DecoderTest">
+    <configuration name="DecoderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baoge.redis_demo.test_main.DecoderTest" />
+      <module name="netty-lecture_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.redis_demo.test_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baoge.netty.demo_011_nianbaochaibao.client.MyClient" />
       <module name="netty-lecture_main" />
@@ -828,9 +881,11 @@
       <item itemvalue="Application.MyClient" />
       <item itemvalue="Application.TestProtocolServer" />
       <item itemvalue="Application.TestProtocolClient" />
+      <item itemvalue="Application.DecoderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DecoderTest" />
         <item itemvalue="Application.TestProtocolClient" />
         <item itemvalue="Application.TestProtocolServer" />
         <item itemvalue="Application.MyClient" />
@@ -861,7 +916,7 @@
       <workItem from="1594626732566" duration="209000" />
       <workItem from="1594689360268" duration="970000" />
       <workItem from="1594707671019" duration="4616000" />
-      <workItem from="1594717425620" duration="15763000" />
+      <workItem from="1594717425620" duration="29047000" />
     </task>
     <task id="LOCAL-00001" summary="LineBasedFrameDecoder案例">
       <created>1592209062273</created>
@@ -989,11 +1044,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594798767899</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="自定义协议demo">
+      <created>1594801898307</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1594801898307</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56477000" />
+    <option name="totallyTimeSpent" value="69761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1008,7 +1070,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18390192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18390192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1017,8 +1079,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5418024" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2062975" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18241042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42345276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
@@ -1066,72 +1128,64 @@
     <MESSAGE value="注释" />
     <MESSAGE value="格式化" />
     <MESSAGE value="模拟粘包" />
-    <option name="LAST_COMMIT_MESSAGE" value="模拟粘包" />
+    <MESSAGE value="自定义协议demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义协议demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_013_encode_decode/LineBasedFrameDecoderClient.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java</url>
+          <line>74</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/LengthFieldBasedFrameDecoder.java</url>
-          <line>357</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test_main/DecoderTest.java</url>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/string/StringDecoder.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_016_encode_decode/LengthFieldBasedFrameDecoderClient.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_017_serializer/JdkSerializerServer.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/bcfad148532ac85727f6ca3b1150396c201b180a/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/serialization/ObjectEncoder.class</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_019_codec_chinese/codec/ChineseMessageDecoder.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java</url>
-          <line>254</line>
-          <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>determineReplyType(buffer)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>javaChannel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>allocHandle.attemptedBytesRead()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>byteBuf.writableBytes()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>unsafe().recvBufAllocHandle()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>in.readableBytes()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>in.isReadable()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1145,32 +1199,141 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>System.getProperty(&quot;line.separator&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_002/MyServer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="857" selection-start-line="857" selection-end-line="857" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="644" column="25" selection-start-line="644" selection-start-column="25" selection-end-line="644" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/ChannelPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="615" column="20" selection-start-line="615" selection-start-column="20" selection-end-line="615" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/DefaultMaxMessagesRecvByteBufAllocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="e#3879#3880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/ByteBuf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1294" column="24" selection-start-line="1294" selection-start-column="24" selection-end-line="1294" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/PooledByteBuf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javatools/jdk1.8/jdk/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javatools/jdk1.8/jdk/src.zip!/java/nio/channels/spi/AbstractInterruptibleChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#4315#4316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/nio/AbstractNioChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+          <folding>
+            <element signature="e#4070#4071#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/socket/nio/NioSocketChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="372" column="42" selection-start-line="372" selection-start-column="42" selection-end-line="372" selection-end-column="42" />
+          <folding>
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3976#3977#0" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="e#4093#4094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/WrappedByteBuf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="812" selection-start-line="812" selection-end-line="812" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/PooledUnsafeDirectByteBuf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="272" column="20" lean-forward="true" selection-start-line="272" selection-start-column="20" selection-end-line="272" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/nio/AbstractNioByteChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_002/client/MyClient.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/AbstractByteBuf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/string/StringEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="163">
+          <caret line="1100" column="5" lean-forward="true" selection-start-line="1100" selection-start-column="5" selection-end-line="1100" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1184,9 +1347,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/LengthFieldPrepender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/CodecOutputList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="143">
           <caret line="146" selection-start-line="146" selection-end-line="146" />
           <folding>
             <element signature="e#4129#4130#0" expanded="true" />
@@ -1194,396 +1378,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/ChannelOutboundBuffer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/MessageToMessageEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="323">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/AbstractChannel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="829" selection-start-line="829" selection-end-line="829" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1316" selection-start-line="1316" selection-end-line="1316" />
+        <state relative-caret-position="304">
+          <caret line="29" column="61" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="62" />
           <folding>
-            <element signature="e#14227#14228#0" expanded="true" />
-            <element signature="e#14273#14274#0" expanded="true" />
-            <element signature="e#42949#42950#0" expanded="true" />
-            <element signature="e#42984#42985#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="361" selection-start-line="361" selection-end-line="361" />
+        <state relative-caret-position="540">
+          <caret line="896" column="89" lean-forward="true" selection-start-line="896" selection-start-column="89" selection-end-line="896" selection-end-column="89" />
           <folding>
             <element signature="e#26510#26511#0" expanded="true" />
             <element signature="e#26565#26566#0" expanded="true" />
+            <element signature="e#27968#27969#0" expanded="true" />
+            <element signature="e#28039#28040#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/MessageToMessageEncoder.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/util/ReferenceCountUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="217">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_002/client/MyClientInitializer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/ByteBuf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="336" column="39" selection-start-line="336" selection-start-column="28" selection-end-line="336" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/string/StringDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/LengthFieldBasedFrameDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="341" column="29" selection-start-line="341" selection-start-column="29" selection-end-line="341" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="438" column="60" selection-start-line="438" selection-start-column="24" selection-end-line="438" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_002/client/MyClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_010_codec/MyServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_010_codec/MyServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/MyServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/client/MyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="168">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
           <folding>
-            <element signature="e#996#1422#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#14227#14228#0" expanded="true" />
+            <element signature="e#14273#14274#0" expanded="true" />
+            <element signature="e#35061#35062#0" expanded="true" />
+            <element signature="e#35107#35108#0" expanded="true" />
+            <element signature="e#42949#42950#0" expanded="true" />
+            <element signature="e#42984#42985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/client/MyClientHandler.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/channel/AbstractChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/codec/MyPersonEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_012_nianbaochaibao/codec/MyPersonDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_019_codec_chinese/ChineseNettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="49" column="70" lean-forward="true" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+        <state relative-caret-position="168">
+          <caret line="299" column="20" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#9496#9497#0" expanded="true" />
+            <element signature="e#9546#9547#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_019_codec_chinese/ChineseNettyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="36" column="74" lean-forward="true" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/client/MyClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/netty/demo_011_nianbaochaibao/MyServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protobuf/DataInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="1777" column="54" selection-start-line="1777" selection-start-column="54" selection-end-line="1777" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protobuf/ProtoBufTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/util/ByteBufferUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/RequestMessagePacketEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/serializer/Serializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/serializer/FastJsonSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="36" column="70" lean-forward="true" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1529#3128#0" expanded="true" />
+            <element signature="e#2063#3094#0" expanded="true" />
+            <element signature="e#3093#3094#0" expanded="true" />
+            <element signature="e#3127#3128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="467" column="30" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/handler/codec/MessageToByteEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/RequestMessagePacketEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/RequestMessagePacketDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="401">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/ResponseMessagePacketEncoder.java">
+    <entry file="jar://D:/javatools/jdk1.8/jdk/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="347">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/codec/ResponseMessagePacketDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/BaseMessagePacket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/ProtocolConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/RequestMessagePacket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/entity/ResponseMessagePacket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/LineStringDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/util/SerialNumberUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespArrayDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespErrorDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespIntegerDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespSimpleStringDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+        <state relative-caret-position="133">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolClient.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.15.Final/d4bb115e8980f5dde55be6061a512d9a7e69033a/netty-all-4.1.15.Final-sources.jar!/io/netty/buffer/ByteBufAllocator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="171">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/constant/RespConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/protocol_custom/TestProtocolServer.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespCodec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        <state relative-caret-position="228">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/utils/CodecUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#933#2773#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#2772#2773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/constant/ReplyType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/RespBulkStringDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/DefaultRespCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baoge/redis_demo/test_main/DecoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
